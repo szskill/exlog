@@ -1,6 +1,10 @@
 # exlog
 ## a very simple logger for small projects
 
+### Install
+Install `exlog` by adding this line to your `Cargo.toml`:  
+`exlog = "0.0.1"`
+
 ### Examples:
 ```rs
 let logger = Logger { name: String::from("my_app") };
