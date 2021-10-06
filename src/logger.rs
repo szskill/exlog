@@ -1,3 +1,20 @@
+/// The namesake struct `Logger` which provides all of the logging
+/// capabilities.
+/// 
+/// # Examples
+/// 
+/// ```rs
+/// let logger = Logger { name: String::from("my_app") };
+///
+/// logger.info("no errors have been predicted");
+/// logger.warn("an error has been predicted");
+/// logger.error("an error occurred!");
+///
+///  // prints:
+///  // [my_app:INFO] no errors have been predicted
+///  // [my_app:WARNING] an error has been predicted
+///  // [my_app:ERROR] an error occurred!
+/// ```
 pub struct Logger {
     /// The name of the logger.
     /// 
