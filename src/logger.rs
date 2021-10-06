@@ -5,7 +5,7 @@ pub struct Logger {
     ///     `[name:INFO] text`,
     ///     `[name:WARN] text`,
     ///     `[name:ERROR] text`
-    pub name: String
+    pub name: String,
 }
 
 impl Logger {
