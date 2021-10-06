@@ -1,8 +1,6 @@
 # exlog
 ## a very simple logger for small projects
 
-<br>
-
 ### Examples:
 ```rs
 let logger = Logger { name: String::from("my_app") };
