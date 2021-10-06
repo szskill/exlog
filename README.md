@@ -3,7 +3,7 @@
 
 ### Install
 Install `exlog` by adding this line to your `Cargo.toml`:  
-`exlog = "0.0.1"`
+`exlog = "0.1.2"`
 
 ### Example:
 ```rs
