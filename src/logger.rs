@@ -2,7 +2,6 @@ pub struct Logger {
     /// The name of the logger.
     /// 
     /// This will be used for all 3 functions (info, warn, error):
-    /// 
     ///     `[name:INFO] text`,
     ///     `[name:WARN] text`,
     ///     `[name:ERROR] text`
