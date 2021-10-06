@@ -13,8 +13,12 @@ logger.info("no errors have been predicted");
 logger.warn("an error has been predicted");
 logger.error("an error occurred!");
 
+logger.save_to_file("log.txt");
+
 // prints:
 // [my_app:INFO] no errors have been predicted
 // [my_app:WARNING] an error has been predicted
 // [my_app:ERROR] an error occurred!
+
+// ...and writes all of it to log.txt
 ```

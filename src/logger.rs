@@ -37,9 +37,6 @@ impl Logger {
     /// 
     /// ```rs
     /// let logger = Logger::new("my_app");
-    /// logger.info("nice!");
-    /// logger.warn("hmm, maybe not nice...");
-    /// logger.error("oh no.");
     /// ```
     pub fn new(name: &str) -> Logger {
         Logger {
