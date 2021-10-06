@@ -26,8 +26,10 @@ mod tests {
         let mut logger = Logger::new("tests");
 
         logger.info("testing");
+        logger.warn("test warning?");
+        logger.error("test error!!!");
         logger.save_to_file("test_log_file.txt");
 
-        assert_eq!(fs::read_to_string("test_log_file.txt").expect("failed reading log file"), "[tests:INFO] testing");
+        assert_eq!(fs::read_to_string("test_log_file.txt").expect("failed reading log file"), "[tests:INFO] testing\n[tests:WARNING] test warning?\n[tests:ERROR] test error!!!");
     }
 }

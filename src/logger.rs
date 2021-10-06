@@ -101,6 +101,6 @@ impl Logger {
             .map(|x| (&x[7..x.len()]).to_string())
             .collect();
 
-        fs::write(path, fixed_log_history.join("")).expect("failed saving logs to file");
+        fs::write(path, fixed_log_history.join("\n")).expect("failed saving logs to file");
     }
 }
