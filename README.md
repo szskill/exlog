@@ -5,9 +5,9 @@
 Install `exlog` by adding this line to your `Cargo.toml`:  
 `exlog = "0.0.1"`
 
-### Examples:
+### Example:
 ```rs
-let logger = Logger { name: String::from("my_app") };
+let logger = Logger::new("my_app");
 
 logger.info("no errors have been predicted");
 logger.warn("an error has been predicted");
